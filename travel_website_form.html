@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Makemytrip - form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <form action="">
+      <div>
+        <h1>Make my Trip form</h1>
+        <label for="name">Full Name</label>
+        <input id="name" type="text" placeholder="Enter your full name" />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="Enter your email" required />
+      </div>
+      <div>
+        <label for="phone">Phone Number</label>
+        <input id="phone" type="tel" placeholder="Enter your phone Number" />
+      </div>
+      <div>
+        <label for="dob">Date of Birth</label>
+        <input id="dob" type="date" />
+      </div>
+      <div>
+        <label for="passport">Passport Number</label>
+        <input
+          id="passport"
+          type="number"
+          placeholder="Enter valid Passport Number" required /
+        />
+      </div>
+      <h2>Travel Detail</h2>
+      <div>
+        <label for="country">Departure Country</label>
+        <select name="Departure" id="country" >
+          <option value="India">India</option>
+          <option value="america">America</option>
+          <option value="austrlia">Austrlia</option>
+          <option value="pakistan">Pakistan</option>
+        </select>
+      </div>
+      <div>
+        <label for="countryD">Destination Country</label>
+        <select name="Destination" id="countryD">
+          <option value="Please_select">Please select</option>
+          <option value="India">India</option>
+          <option value="america">America</option>
+          <option value="austrlia">Austrlia</option>
+          <option value="pakistan">Pakistan</option>
+        </select>
+      </div>
+      <div>
+        <label for="Departure_time">Departure date and time</label>
+        <input id="Departure_time" type="datetime-local" required />
+      </div>
+      <div>
+        <label for="return_time">return date and time</label>
+        <input id="return_time" type="datetime-local" required />
+      </div>
+      <div>
+        <label for="service">Class of Service</label>
+        <select name="Destination" id="countryD">
+          <option value="Please_select">Please select</option>
+          <option value="economy">Economy</option>
+          <option value="business">Business</option>
+          <option value="first">First</option>
+        </select>
+      </div>
+      <h2>Traveler's Details</h2>
+      <div>
+        <label for="airline">Preferred Airline</label>
+        <input id="airline" type="text" required />
+      </div>
+      <div>
+        <button type="Submit">Submit Form</button>
+      </div>
+    </form>
+  </body>
+</html>
